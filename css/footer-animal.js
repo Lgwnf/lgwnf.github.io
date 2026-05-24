@@ -6,7 +6,7 @@ function initFooterAnimal() {
     footerAnimal.id = 'footer-animal';
     footerAnimal.innerHTML = `
         <img class="animal entered loaded"
-            src="https://img.picgo.net/2025/06/19/3503037dc39cb8eeb8fa.png"
+            src="/img/wz/3503.png"
             alt="动物" />
     `;
     
@@ -23,7 +23,7 @@ function initFooterAnimal() {
             bottom: 0;
             width: 100%;
             height: 36px;
-            background: url(https://i1.wp.com/ruom.wuaze.com/i/2024/10/19/351933.webp) repeat center / auto 100%;
+            background: url(/img/wz/di.webp) repeat center / auto 100%;
             box-shadow: 0 4px 7px rgba(0,0,0,.15);
         }
         .animal {

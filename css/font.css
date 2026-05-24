@@ -2,7 +2,7 @@
     /* 为载入的字体取名字(随意) */
     font-family: '猫啃珠圆体';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url('/img//font/MaoKen.ttf') format("truetype");
+    src: url('/img/font/MaoKen.ttf') format("truetype");
     
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;

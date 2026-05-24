@@ -1,3 +1,3 @@
-var posts=["/wz/Adobe/","/wz/vpn2/","/wz/vpn/","/wz/Netflix/","/wz/vpn1/","/wz/gxscc/","/wz/czzpt/","/wz/gwsj/","/wz/Aegisub/","/wz/gwyy/","/wz/yxjb/","/wz/wp/","/wz/djyx/","/wz/Mark/","/wz/BT/","/wz/mrfz/","/wz/gwsp/"];function toRandomPost(){
+var posts=["/wz/Bandizip/","/wz/Adobe/","/wz/idm/","/wz/PotPlayer/","/wz/yinfuhe/","/wz/ROOT/","/wz/vpn1/","/wz/vpn/","/wz/gxscc/","/wz/vpn2/","/wz/mumu/","/wz/Netflix/","/wz/sp?/","/wz/czzpt/","/wz/yxjsq/","/wz/gwsj/","/wz/gwyy/","/wz/Aegisub/","/wz/mrfz/","/wz/yxjb/","/wz/djyx/","/wz/wp/","/wz/gwsp/","/wz/Mark/","/wz/084/","/wz/sbgb/","/wz/BT/","/wz/Caesium/","/wz/tuzo/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };

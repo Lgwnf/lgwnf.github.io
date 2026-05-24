@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="350 160 350 320">
+  <defs>
+    <!-- 双层霓虹发光滤镜 -->
+    <filter id="neon" x="-80%" y="-80%" width="260%" height="260%">
+      <!-- 外层：宽范围青色氛围光 -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="18" result="glow1"/>
+      <feFlood flood-color="#06b6d4" flood-opacity="0.7" result="c1"/>
+      <feComposite in="c1" in2="glow1" operator="in" result="outer"/>
+      
+      <!-- 中层：聚焦亮青 -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="glow2"/>
+      <feFlood flood-color="#67e8f9" flood-opacity="0.9" result="c2"/>
+      <feComposite in="c2" in2="glow2" operator="in" result="mid"/>
+      
+      <!-- 内层：极亮白芯 -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="glow3"/>
+      <feFlood flood-color="#ecfeff" flood-opacity="1" result="c3"/>
+      <feComposite in="c3" in2="glow3" operator="in" result="inner"/>
+      
+      <!-- 合成：外光 + 中光 + 内芯 + 原图 -->
+      <feMerge>
+        <feMergeNode in="outer"/>
+        <feMergeNode in="mid"/>
+        <feMergeNode in="inner"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <g transform="translate(0,661) scale(0.1,-0.1)" filter="url(#neon)">
+    <path fill="#FFFFFF" d="M5135 4099 c-171 -26 -321 -113 -422 -244 -51 -66 -107 -180 -118 -237 -5 -28 -16 -43 -48 -64 -58 -38 -156 -133 -174 -168 -74 -143 12 -244 235 -276 59 -8 62 -10 149 -97 101 -101 186 -152 309 -183 366 -94 743 145 806 510 12 71 13 73 68 115 152 117 203 224 149 311 -38 61 -124 97 -278 114 l-93 10 -62 56 c-132 120 -340 181 -521 153z m258 -76 c87 -26 236 -111 237 -135 0 -5 -21 -8 -46 -8 -99 0 -422 -59 -451 -82 -18 -14 -16 -45 2 -52 9 -3 54 3 101 14 121 28 249 48 362 56 l98 7 34 -52 c54 -86 82 -174 87 -281 9 -177 -46 -319 -172 -446 -226 -227 -585 -232 -821 -12 -84 79 -63 93 27 18 185 -154 422 -185 627 -81 57 29 177 119 169 127 -2 3 -30 -2 -63 -11 -115 -30 -268 -15 -383 36 l-46 21 115 28 c63 16 125 34 138 40 25 11 30 48 7 56 -8 4 -70 -8 -138 -24 -208 -53 -195 -54 -256 14 -93 105 -141 229 -141 369 0 114 32 224 91 314 l22 33 -39 -20 c-146 -74 -260 -242 -284 -416 -16 -113 1 -205 67 -353 3 -8 -2 -13 -11 -13 -38 0 -89 158 -90 280 0 103 15 172 60 266 81 166 249 290 437 324 66 11 193 3 260 -17z m529 -230 c74 -20 121 -59 121 -101 0 -42 -42 -103 -105 -153 l-52 -41 -12 69 c-14 79 -35 139 -69 201 -14 25 -25 46 -25 48 0 7 80 -7 142 -23z m-1343 -402 c6 -48 20 -114 31 -146 11 -32 20 -61 20 -65 0 -12 -100 10 -147 32 -74 35 -88 70 -53 137 17 34 114 131 131 131 4 0 11 -40 18 -89z"/>
+  </g>
+</svg>
